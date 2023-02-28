@@ -1,0 +1,40 @@
+.navigation{
+    position: relative;
+    width:60px;
+    height:60px;
+    background: #E6E6FA;
+    border-radius: 50%;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+   
+}
+.navigation.active{
+    width: 600px
+}
+
+.navigation .toggleMenu{
+    position: absolute;
+    width:60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.navigation.active .toggleMenu {
+    background: #ff4181;
+    transition-delay: 0s;
+    transform: translateY(60px);
+    width:30px;
+    height:30px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+}
+/* till 5.11 mins */

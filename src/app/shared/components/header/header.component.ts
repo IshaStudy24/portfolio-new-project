@@ -12,4 +12,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openMenu(){
+    let toggleMenu = document.querySelector('.toggleMenu')
+    let navigation = document.getElementById('nav')!
+    navigation.classList.toggle('active')
+  }
 }
