@@ -1,8 +1,12 @@
+.headerBackground{
+    background: black;
+}
 .navigation{
     position: relative;
     width:60px;
     height:60px;
-    background: #E6E6FA;
+    margin-top: 10px;
+    background: white;
     border-radius: 50%;
     transition: 0.5s;
     transition-delay: 0.5s;
@@ -24,17 +28,78 @@
     background: white;
     border-radius: 50%;
     transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     transition: 0.5s;
     transition-delay: 0.5s;
+    margin-left: -32px;
 }
 
 .navigation.active .toggleMenu {
-    background: #ff4181;
+    background: #008E97;
     transition-delay: 0s;
     transform: translateY(60px);
     width:30px;
     height:30px;
     box-shadow: 0 10px 15px rgba(0,0,0,0.05);
 }
-/* till 5.11 mins */
+
+.navigation .toggleMenu::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background: #333;
+    transform: translateY(-5px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.navigation .toggleMenu::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
+    background: #333;
+    transform: translateY(5px);
+    transition: 0.3s;
+    transition-delay: 0.2s;
+}
+
+.navigation.active .toggleMenu::before{
+    transition-delay: 0s;
+    background: #fff;
+    transform: translateY(0px) rotate(45deg) scale(0.6);
+}
+
+.navigation.active .toggleMenu::after{
+    background: #fff;
+    transform: translateY(0px) rotate(315deg) scale(0.6);
+}
+
+.navigation li{
+    list-style: none;
+    transition: 0.5s;
+    transform: scale(0);
+}
+.navigation.active li{
+    transition-delay: 0.75s;
+    display: flex;
+    transform: scale(1);
+}
+.navigation li a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.navigation li a:hover{
+    background: #008E97;
+    color: #fff;
+}
