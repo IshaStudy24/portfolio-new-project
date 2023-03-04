@@ -34,7 +34,7 @@
     transition: all 0.3s linear 0s;
   }
   
-  .our-team:hover .picture::before {
+  .our-team .picture::before {
     height: 100%;
   }
   
@@ -58,7 +58,7 @@
     transition: all 0.9s ease 0s;
   }
   
-  .our-team:hover .picture img {
+  .our-team .picture img {
     box-shadow: 0 0 0 14px white;
     transform: scale(0.7);
   }
