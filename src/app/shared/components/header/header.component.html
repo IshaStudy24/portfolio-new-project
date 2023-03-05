@@ -5,10 +5,10 @@
         </div>
         <div class="col-6" style="display:flex;justify-content: right;">
             <ul class="navigation" id="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="cursor" routerLinkActive="navigationActive" [routerLink]="['/home']"><a>Home</a></li>
+                <li class="cursor" routerLinkActive="navigationActive" [routerLink]="['/project']"><a>Projects</a></li>
+                <li class="cursor" routerLinkActive="navigationActive" [routerLink]="['/resume']"><a>Resume</a></li>
+                <li class="cursor" routerLinkActive="navigationActive" [routerLink]="['/contact']"><a>Contact</a></li>
                 <span class="toggleMenu" (click)="openMenu()"></span>
             </ul>
         </div>

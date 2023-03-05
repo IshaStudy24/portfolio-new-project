@@ -103,3 +103,9 @@
     background: #008E97;
     color: #fff;
 }
+
+.navigationActive{
+    background: #008E97;
+    color: #fff;
+    border-radius: 20px;
+}
