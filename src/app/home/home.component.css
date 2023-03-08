@@ -9,6 +9,7 @@
     text-align: center;
     overflow: hidden;
     position: relative;
+    border-radius: 10px;
   }
   
   .our-team .picture {
