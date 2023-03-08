@@ -74,9 +74,8 @@
   
   .our-team .social {
     width: 100%;
-    padding: 0;
+    padding: 10px;
     margin: 0;
-    background-color: #008E97;
     position: absolute;
     bottom: -100px;
     left: 0;
@@ -88,7 +87,13 @@
   }
   
   .our-team .social li {
+    margin-right: 5px;
     display: inline-block;
+    border-radius: 30px;
+    background-color: #008E97;
+  }
+  .our-team .social li:hover{
+    transform: translateY(-5px);
   }
   .our-team .social li img{
     height: 25px;
@@ -147,3 +152,9 @@
     transition:all 0.30s;
   }
   /* button css end */
+
+  @media screen and (max-width:768px) and (min-width:320px){
+    .our-team .social {
+      bottom: 0;
+    }
+  }
