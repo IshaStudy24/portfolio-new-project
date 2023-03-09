@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" id="home">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-sx-12">
             <div class="row" style="margin-top: 80px;">
@@ -12,11 +12,20 @@
                       <h4 class="title">Software Developer</h4>
                     </div>
                     <ul class="social mt-5">
-                      <li><img src="../../assets/icons/logo-linkedin.svg" alt="linkedin"></li>
-                      <li><img src="../../assets/icons/logo-instagram.svg" alt="instagram"></li>
-                      <li><img src="../../assets/icons/logo-facebook.svg" alt="facebook"></li>
-                      <li><img src="../../assets/icons/mail-outline.svg" alt="email"></li>
-                      <li><img src="../../assets/icons/call-outline.svg" alt="call"></li>
+                      <li><a href="https://www.linkedin.com/in/isha-lanjwal-2065031a0" target="_blank">
+                        <img src="../../assets/icons/logo-linkedin.svg" alt="linkedin">
+                      </a></li>
+                      <li><a href="https://www.instagram.com/ishalanjwal/" target="_blank">
+                        <img src="../../assets/icons/logo-instagram.svg" alt="instagram">
+                      </a></li>
+                      <li><a href="https://www.facebook.com/isha.lanjwal.9" target="_blank">
+                      <img src="../../assets/icons/logo-facebook.svg" alt="facebook"></a></li>
+                      <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">
+                        <img src="../../assets/icons/mail-outline.svg" alt="email">
+                      </a></li>
+                      <li><a href="tel:9867290643">
+                        <img src="../../assets/icons/call-outline.svg" alt="call">
+                      </a></li>
                     </ul>
                   </div>
                 </div>    
@@ -30,13 +39,13 @@
             skills and now building scalable web applications. Willing to learn and adapt new skills.</p>
             <div class="row" style="text-align: center">
                 <div class="col-lg-3 col-md-3 col-sx-12 col-sm-12 m-2">
-                    <button class="cursor" [routerLink]="['/project']" href="#">Projects</button> 
+                    <button class="cursor" (click)="onAnchorClick('#project')" href="#">Projects</button> 
                 </div>
                 <div class="col-lg-3 col-md-3 col-sx-12 col-sm-12 m-2">
-                    <button class="cursor" [routerLink]="['/resume']" href="#">Resume</button> 
+                    <button class="cursor" (click)="onAnchorClick('#resume')" href="#">Resume</button> 
                 </div>
                 <div class="col-lg-3 col-md-3 col-sx-12 col-sm-12 m-2">
-                    <button  class="cursor" [routerLink]="['/contact']" href="#">Contact</button> 
+                    <button  class="cursor" (click)="onAnchorClick('#contact')" href="#">Contact</button> 
                 </div>
             </div>
           </div> 

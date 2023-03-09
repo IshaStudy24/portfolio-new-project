@@ -12,6 +12,18 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onAnchorClick(id:any) {
+    window.scrollTo(0,0);
+      const element = document.querySelector(id);
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+          inline: "center"
+        });
+    }
+  }
+  
   openMenu(){
     let toggleMenu = document.querySelector('.toggleMenu')
     let navigation = document.getElementById('nav')!
