@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
         element.scrollIntoView({
           behavior: "smooth",
           block: "center",
-          inline: "center"
+          inline: "center",
         });
     }
   }

@@ -14,18 +14,20 @@
   font-family: "Poppins", sans-serif;
   position: relative;
   bottom: 0px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 20px 0px;
   background: rgb(0, 0, 15);
   border-top: aliceblue 2px solid;
+  color:aliceblue
 }
 
 .copyright {
-  color: aliceblue;
+  text-align: right;
+  font-size: 10px;
+  padding:10px
+}
+
+.contact_info{
+  font-size: 10px;
+  padding:10px
 }
 
 .social {
@@ -34,15 +36,10 @@
   align-items: center;
 }
 
-.social p{
-  color: aliceblue;
-}
-
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 40px;
 }
 
 .wrapper .icon {
@@ -69,7 +66,6 @@
   top: 0;
   font-size: 14px;
   background: aliceblue;
-  color: aliceblue;
   font-family: "Poppins", sans-serif;
   padding: 5px 8px;
   border-radius: 5px;
@@ -107,21 +103,24 @@
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {
   background: #0077b5;
-  color: aliceblue;
 }
 
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
   background: #4267b2;
-  color: aliceblue;
 }
 
 .wrapper .email:hover,
 .wrapper .email:hover .tooltip,
 .wrapper .email:hover .tooltip::before {
   background: #B23121;
-  color: aliceblue;
+}
+
+.wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapps:hover .tooltip::before {
+  background: #25D366;
 }
 
 .wrapper .instagram:hover,
@@ -135,12 +134,14 @@
     #d6249f 60%,
     #285aeb 90%
   );
-  color: aliceblue;
 }
 
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
-  background: #333;
-  color: aliceblue;
+
+@media screen and (max-width:768px) and (min-width:320px){
+  .copyright {
+    text-align: center;
+  }
+  .contact_info{
+    text-align: center;
+  }
 }
